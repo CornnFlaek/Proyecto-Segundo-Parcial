@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="segundoparcialmoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLL-FJ-j76">
+                                <rect key="frame" x="16" y="224" width="170" height="32"/>
+                                <state key="normal" title="Serpiente de Cascabel"/>
+                                <connections>
+                                    <segue destination="Z7g-Vi-WDg" kind="show" id="voL-1I-Ckk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-MT-aVM">
+                                <rect key="frame" x="206" y="224" width="153" height="30"/>
+                                <state key="normal" title="Escorpion (Reptil)"/>
+                                <connections>
+                                    <segue destination="qaO-vN-pdU" kind="show" id="M9z-w2-1r2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrd-SH-O4r">
+                                <rect key="frame" x="16" y="435" width="153" height="30"/>
+                                <state key="normal" title="Dragon de Komodo"/>
+                                <connections>
+                                    <segue destination="GZ8-Fj-JK6" kind="show" id="V3R-T4-1oS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMZ-fj-sYB">
+                                <rect key="frame" x="206" y="435" width="153" height="30"/>
+                                <state key="normal" title="Tortuga de desierto"/>
+                                <connections>
+                                    <segue destination="UUd-On-DdF" kind="show" id="CIX-HF-jyV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoologico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-q0-8aF">
+                                <rect key="frame" x="146" y="20" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cascabel" translatesAutoresizingMaskIntoConstraints="NO" id="9wa-YS-iRe">
+                                <rect key="frame" x="6" y="73" width="180" height="143"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="escoprion(reptil)" translatesAutoresizingMaskIntoConstraints="NO" id="abO-tm-d5j">
+                                <rect key="frame" x="192" y="73" width="180" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="R1n-Br-42J"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragon-de-komodo-800x375" translatesAutoresizingMaskIntoConstraints="NO" id="Quj-gs-hCs">
+                                <rect key="frame" x="6" y="284" width="180" height="143"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tortuga1" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-Vr-Xee">
+                                <rect key="frame" x="192" y="284" width="180" height="143"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PcT-MT-aVM" secondAttribute="trailing" constant="16" id="0DM-fg-eyp"/>
+                            <constraint firstItem="hrd-SH-O4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Dg-uy-C69"/>
+                            <constraint firstItem="abO-tm-d5j" firstAttribute="bottom" secondItem="9wa-YS-iRe" secondAttribute="bottom" id="2aS-La-NkF"/>
+                            <constraint firstItem="wMZ-fj-sYB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="206" id="8PZ-au-EBY"/>
+                            <constraint firstItem="PcT-MT-aVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="206" id="9O7-VO-f4I"/>
+                            <constraint firstItem="PcT-MT-aVM" firstAttribute="top" secondItem="abO-tm-d5j" secondAttribute="bottom" constant="8" symbolic="YES" id="AY1-Mf-c3v"/>
+                            <constraint firstItem="abO-tm-d5j" firstAttribute="top" secondItem="9wa-YS-iRe" secondAttribute="top" id="D95-OM-2RJ"/>
+                            <constraint firstItem="9wa-YS-iRe" firstAttribute="top" secondItem="tdG-q0-8aF" secondAttribute="bottom" constant="32" id="FpP-zd-Vi2"/>
+                            <constraint firstItem="Quj-gs-hCs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="GMB-qS-rbD"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="leading" secondItem="Quj-gs-hCs" secondAttribute="trailing" constant="6" id="Gx1-e3-Tk2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HLL-FJ-j76" secondAttribute="trailing" constant="189" id="HSt-gM-rSF"/>
+                            <constraint firstItem="tdG-q0-8aF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JAX-Q1-OZZ"/>
+                            <constraint firstItem="PcT-MT-aVM" firstAttribute="top" secondItem="HLL-FJ-j76" secondAttribute="bottom" constant="-32" id="Kpa-Gt-kcV"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="leading" secondItem="Quj-gs-hCs" secondAttribute="trailing" constant="6" id="Ll7-jy-OYO"/>
+                            <constraint firstItem="hrd-SH-O4r" firstAttribute="top" secondItem="PcT-MT-aVM" secondAttribute="bottom" constant="181" id="PIK-ed-rSC"/>
+                            <constraint firstItem="abO-tm-d5j" firstAttribute="trailing" secondItem="Ixq-Vr-Xee" secondAttribute="trailing" id="QMH-1L-KFi"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="bottom" secondItem="Quj-gs-hCs" secondAttribute="bottom" id="SMO-rm-Ara"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="top" secondItem="PcT-MT-aVM" secondAttribute="bottom" constant="30" id="Ubu-0o-pcQ"/>
+                            <constraint firstItem="tdG-q0-8aF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="WRW-gh-3w0"/>
+                            <constraint firstItem="wMZ-fj-sYB" firstAttribute="top" secondItem="Ixq-Vr-Xee" secondAttribute="bottom" constant="8" id="WTc-10-EJI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abO-tm-d5j" secondAttribute="trailing" constant="3" id="Wk3-u6-geN"/>
+                            <constraint firstItem="abO-tm-d5j" firstAttribute="centerX" secondItem="PcT-MT-aVM" secondAttribute="centerX" id="Wlu-gR-2YP"/>
+                            <constraint firstItem="hrd-SH-O4r" firstAttribute="top" secondItem="Quj-gs-hCs" secondAttribute="bottom" constant="8" id="YGn-Ok-Mlt"/>
+                            <constraint firstItem="HLL-FJ-j76" firstAttribute="top" secondItem="tdG-q0-8aF" secondAttribute="bottom" constant="183" id="aZ7-wU-68Q"/>
+                            <constraint firstItem="HLL-FJ-j76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bcM-c2-Osq"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="top" secondItem="PcT-MT-aVM" secondAttribute="bottom" constant="30" id="dxX-nI-qot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdG-q0-8aF" secondAttribute="trailing" constant="145" id="edS-ce-97k"/>
+                            <constraint firstItem="Quj-gs-hCs" firstAttribute="top" secondItem="HLL-FJ-j76" secondAttribute="bottom" constant="28" id="eo4-6g-sIO"/>
+                            <constraint firstItem="Quj-gs-hCs" firstAttribute="leading" secondItem="9wa-YS-iRe" secondAttribute="leading" id="fQ1-6g-H1D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ixq-Vr-Xee" secondAttribute="trailing" constant="3" id="fXk-cP-Veg"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="leading" secondItem="Quj-gs-hCs" secondAttribute="trailing" constant="6" id="gR2-dI-xIa"/>
+                            <constraint firstItem="wMZ-fj-sYB" firstAttribute="top" secondItem="hrd-SH-O4r" secondAttribute="bottom" constant="-30" id="ghl-um-hy4"/>
+                            <constraint firstItem="wMZ-fj-sYB" firstAttribute="top" secondItem="Ixq-Vr-Xee" secondAttribute="bottom" constant="8" symbolic="YES" id="h6G-52-rGD"/>
+                            <constraint firstItem="9wa-YS-iRe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="lfw-6P-cTW"/>
+                            <constraint firstItem="abO-tm-d5j" firstAttribute="leading" secondItem="Ixq-Vr-Xee" secondAttribute="leading" id="liK-o3-Sni"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wMZ-fj-sYB" secondAttribute="trailing" constant="16" id="rxG-WU-tgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hrd-SH-O4r" secondAttribute="trailing" constant="206" id="uEP-zh-9w9"/>
+                            <constraint firstItem="abO-tm-d5j" firstAttribute="leading" secondItem="9wa-YS-iRe" secondAttribute="trailing" constant="6" id="vL6-p8-6ss"/>
+                            <constraint firstItem="Ixq-Vr-Xee" firstAttribute="top" secondItem="Quj-gs-hCs" secondAttribute="top" id="xwQ-tq-mkX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oQw-1e-nZ3">
+            <objects>
+                <viewController id="Z7g-Vi-WDg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cAl-Bv-7AM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serpiente de Cascabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvO-oZ-Xh4">
+                                <rect key="frame" x="101" y="212" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DH0-8v-cti">
+                                <rect key="frame" x="310" y="621" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoH-uB-NFM">
+                                <rect key="frame" x="20" y="74" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9W-gD-sUY">
+                                <rect key="frame" x="24" y="242" width="335" height="385.5"/>
+                                <mutableString key="text">Las serpientes de cascabel son venenosa. Todas las especies menos una, C. catalinensis, son fácilmente reconocibles por el característico sonido de su cascabel el cual se encuentra en la punta de la cola.
+Algunas especies de serpiente de cascabel pueden alcanzar hasta 2,5 metros de largo, y los 4 kg de peso. Su piel con círculos amarillos, está marcada en el centro por colores negros (parecidos a diamantes) hace que este tipo de reptil sea el mejor adornado de todo Norteamérica.
+Como su nombre lo dice, el cascabel lo forman unos estuches córneos en el extremo de la cola que en caso de peligro les permiten emitir un sonido de aviso de que es peligrosa y quizá proteja la serpiente de ser pisada por los grandes mamíferos.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cascabel" translatesAutoresizingMaskIntoConstraints="NO" id="7gW-KD-MPh">
+                                <rect key="frame" x="20" y="29" width="335" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="hop-e8-pve"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjm-yP-Dte">
+                                <rect key="frame" x="263" y="626" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hXU-Hb-mep" firstAttribute="trailing" secondItem="DH0-8v-cti" secondAttribute="trailing" constant="16" id="0oD-Gw-6rH"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="U9W-gD-sUY" secondAttribute="trailing" constant="16" id="48q-Lf-I0o"/>
+                            <constraint firstItem="hXU-Hb-mep" firstAttribute="trailing" secondItem="7gW-KD-MPh" secondAttribute="trailing" constant="20" id="6T3-9J-6nA"/>
+                            <constraint firstItem="BoH-uB-NFM" firstAttribute="top" secondItem="DH0-8v-cti" secondAttribute="bottom" constant="-578" id="9zG-ZY-aL0"/>
+                            <constraint firstItem="hXU-Hb-mep" firstAttribute="trailing" secondItem="BoH-uB-NFM" secondAttribute="trailing" constant="20" id="DNe-PP-l0E"/>
+                            <constraint firstItem="BoH-uB-NFM" firstAttribute="leading" secondItem="hXU-Hb-mep" secondAttribute="leading" constant="20" id="DmQ-io-u2i"/>
+                            <constraint firstItem="DH0-8v-cti" firstAttribute="top" secondItem="hXU-Hb-mep" secondAttribute="top" constant="601" id="JNL-Lx-BNA"/>
+                            <constraint firstItem="7gW-KD-MPh" firstAttribute="top" secondItem="BoH-uB-NFM" secondAttribute="bottom" constant="-45" id="Kot-Jz-BDY"/>
+                            <constraint firstItem="DH0-8v-cti" firstAttribute="leading" secondItem="Jjm-yP-Dte" secondAttribute="trailing" constant="8" id="OmF-Sk-ixr"/>
+                            <constraint firstItem="jvO-oZ-Xh4" firstAttribute="top" secondItem="hXU-Hb-mep" secondAttribute="top" constant="192" id="P8M-lo-m1J"/>
+                            <constraint firstItem="7gW-KD-MPh" firstAttribute="leading" secondItem="U9W-gD-sUY" secondAttribute="leading" constant="-4" id="PUA-mi-f59"/>
+                            <constraint firstItem="jvO-oZ-Xh4" firstAttribute="leading" secondItem="hXU-Hb-mep" secondAttribute="leading" constant="101" id="dyd-qJ-nIh"/>
+                            <constraint firstItem="Jjm-yP-Dte" firstAttribute="top" secondItem="hXU-Hb-mep" secondAttribute="top" constant="606" id="eU1-bQ-Nvz"/>
+                            <constraint firstItem="Jjm-yP-Dte" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cAl-Bv-7AM" secondAttribute="leading" constant="20" symbolic="YES" id="jHF-cR-dvG"/>
+                            <constraint firstItem="U9W-gD-sUY" firstAttribute="top" secondItem="7gW-KD-MPh" secondAttribute="bottom" constant="46" id="oOe-U4-kGX"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jvO-oZ-Xh4" secondAttribute="trailing" constant="20" symbolic="YES" id="zXR-h0-cpw"/>
+                            <constraint firstItem="7gW-KD-MPh" firstAttribute="leading" secondItem="hXU-Hb-mep" secondAttribute="leading" constant="20" id="zqI-2R-5ux"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hXU-Hb-mep"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E7I-Sx-NKU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3l-V4-6Fl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.20000000000005" y="-5.8470764617691158"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f06-x0-ptm">
+            <objects>
+                <viewController id="UUd-On-DdF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfv-QD-ubj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tortuga de Desierto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er0-lK-ktn">
+                                <rect key="frame" x="111" y="206" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vqo-w4-Fe1">
+                                <rect key="frame" x="310" y="616" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-Vf-8ov">
+                                <rect key="frame" x="263" y="621" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tortuga1" translatesAutoresizingMaskIntoConstraints="NO" id="Pzr-xD-6Wr">
+                                <rect key="frame" x="20" y="31" width="335" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="Xdv-cD-6yN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC8-W7-3yG">
+                                <rect key="frame" x="20" y="245" width="335" height="385.5"/>
+                                <mutableString key="text">Esta tortuga alcanza una longitud de unos 25 a 36 cm, siendo los machos levemente más grandes que las hembras. Los machos poseen una proyección de su pecho en forma de pico en la zona del cuello algo más largo que el de las hembras, su plastrón (parte inferior del caparazón) es cóncavo a diferencia del de las hembras. Los machos poseen colas más largas que las hembras. Sus caparazones son elevados, y de colores entre verdoso y amarronado. Las tortugas del desierto pueden crecer hasta alcanzar una altura de unos 10 a 15 cm y pesar de 4 a 7 kg cuando adultas. Sus miembros anteriores poseen gruesas escamas similares a garras y están desgastados por el continuo excavar. Las patas posteriores son macizas, con alguna similitud a las del elefante.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Er0-lK-ktn" firstAttribute="top" secondItem="Kc3-IB-3A5" secondAttribute="top" constant="186" id="8Vp-AU-uFc"/>
+                            <constraint firstItem="Pzr-xD-6Wr" firstAttribute="leading" secondItem="hC8-W7-3yG" secondAttribute="leading" id="I2d-KY-n2k"/>
+                            <constraint firstItem="ob5-Vf-8ov" firstAttribute="top" secondItem="Kc3-IB-3A5" secondAttribute="top" constant="601" id="LRK-J6-O8g"/>
+                            <constraint firstItem="hC8-W7-3yG" firstAttribute="top" secondItem="Vqo-w4-Fe1" secondAttribute="bottom" constant="-402" id="MQ2-DK-UWh"/>
+                            <constraint firstItem="Kc3-IB-3A5" firstAttribute="trailing" secondItem="Vqo-w4-Fe1" secondAttribute="trailing" constant="16" id="RHZ-ww-Geu"/>
+                            <constraint firstItem="Er0-lK-ktn" firstAttribute="leading" secondItem="Kc3-IB-3A5" secondAttribute="leading" constant="111" id="dSD-KY-0Pw"/>
+                            <constraint firstItem="Kc3-IB-3A5" firstAttribute="trailing" secondItem="hC8-W7-3yG" secondAttribute="trailing" constant="20" id="idS-dw-0zs"/>
+                            <constraint firstItem="Vqo-w4-Fe1" firstAttribute="leading" secondItem="ob5-Vf-8ov" secondAttribute="trailing" constant="8" id="l4m-m9-bW0"/>
+                            <constraint firstItem="hC8-W7-3yG" firstAttribute="leading" secondItem="Kc3-IB-3A5" secondAttribute="leading" constant="20" id="o6Q-OH-Tck"/>
+                            <constraint firstItem="Vqo-w4-Fe1" firstAttribute="top" secondItem="Kc3-IB-3A5" secondAttribute="top" constant="596" id="vOG-he-STj"/>
+                            <constraint firstItem="Pzr-xD-6Wr" firstAttribute="trailing" secondItem="hC8-W7-3yG" secondAttribute="trailing" id="vuB-Rp-Zqs"/>
+                            <constraint firstItem="Er0-lK-ktn" firstAttribute="top" secondItem="Pzr-xD-6Wr" secondAttribute="bottom" constant="8" symbolic="YES" id="x0i-xa-6be"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Er0-lK-ktn" secondAttribute="trailing" constant="20" symbolic="YES" id="zJ3-b1-kGd"/>
+                            <constraint firstItem="ob5-Vf-8ov" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cfv-QD-ubj" secondAttribute="leading" constant="20" symbolic="YES" id="zdx-83-11H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kc3-IB-3A5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DyG-UN-ksH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4d-4X-xKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="670"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YGv-Cr-Qg1">
+            <objects>
+                <viewController id="GZ8-Fj-JK6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Am9-xo-G8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dragon de Komodo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-j2-a1d">
+                                <rect key="frame" x="113" y="214" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-rY-uFo">
+                                <rect key="frame" x="310" y="616" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efA-T5-HFB">
+                                <rect key="frame" x="263" y="621" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragon-de-komodo-800x375" translatesAutoresizingMaskIntoConstraints="NO" id="dRR-HP-y2w">
+                                <rect key="frame" x="20" y="32" width="335" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="cEA-aS-C81"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kET-JX-9qb">
+                                <rect key="frame" x="24" y="254" width="335" height="284.5"/>
+                                <mutableString key="text">El dragón de Komodo, también llamado monstruo de Komodo y varano de Komodo, es una especie de saurópsido de la familia de los varánidos, endémico de algunas islas de Indonesia central. Es el lagarto de mayor tamaño del mundo, con una longitud media de dos a tres metros y un peso de unos 70 kg. A consecuencia de su tamaño, son los superpredadores de los ecosistemas en los que viven. A pesar de que estos lagartos se alimentan principalmente de carroña, también cazan y tienden emboscadas a sus presas, que incluyen invertebrados, aves y mamíferos.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kET-JX-9qb" firstAttribute="leading" secondItem="4X7-On-dNo" secondAttribute="leading" constant="24" id="1B5-vi-oIR"/>
+                            <constraint firstItem="dRR-HP-y2w" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="12" id="7z7-BF-IWN"/>
+                            <constraint firstItem="7Ek-rY-uFo" firstAttribute="leading" secondItem="efA-T5-HFB" secondAttribute="trailing" constant="8" id="AO5-n1-lWN"/>
+                            <constraint firstItem="4X7-On-dNo" firstAttribute="trailing" secondItem="kET-JX-9qb" secondAttribute="trailing" constant="16" id="CXo-6E-y0r"/>
+                            <constraint firstItem="asJ-j2-a1d" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="194" id="KgJ-Tm-v8G"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="asJ-j2-a1d" secondAttribute="trailing" constant="20" symbolic="YES" id="LBC-EA-8ma"/>
+                            <constraint firstItem="asJ-j2-a1d" firstAttribute="leading" secondItem="4X7-On-dNo" secondAttribute="leading" constant="113" id="LKv-ES-1gI"/>
+                            <constraint firstItem="efA-T5-HFB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Am9-xo-G8F" secondAttribute="leading" constant="20" symbolic="YES" id="LTU-EZ-En4"/>
+                            <constraint firstItem="7Ek-rY-uFo" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="596" id="SwP-Zh-LWR"/>
+                            <constraint firstItem="kET-JX-9qb" firstAttribute="top" secondItem="7Ek-rY-uFo" secondAttribute="bottom" constant="-393" id="YdL-iF-ZEX"/>
+                            <constraint firstItem="4X7-On-dNo" firstAttribute="trailing" secondItem="7Ek-rY-uFo" secondAttribute="trailing" constant="16" id="cSx-QS-gn0"/>
+                            <constraint firstItem="dRR-HP-y2w" firstAttribute="trailing" secondItem="kET-JX-9qb" secondAttribute="trailing" constant="-4" id="eB3-Vk-2jj"/>
+                            <constraint firstItem="efA-T5-HFB" firstAttribute="top" secondItem="4X7-On-dNo" secondAttribute="top" constant="601" id="n46-YX-tJq"/>
+                            <constraint firstItem="dRR-HP-y2w" firstAttribute="leading" secondItem="kET-JX-9qb" secondAttribute="leading" constant="-4" id="wfY-UB-qvn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4X7-On-dNo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W9t-5b-bBd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lju-vg-aV2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="670"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cf0-gU-i5o">
+            <objects>
+                <viewController id="qaO-vN-pdU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gsx-Zh-fQb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mag-HC-qIp">
+                                <rect key="frame" x="310" y="616" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNc-Et-P9d">
+                                <rect key="frame" x="20" y="244" width="335" height="304.5"/>
+                                <mutableString key="text">La familia helodermatidae comprende un género de suarios venenosos. Nuestra especie nativa es el heloderma, conocido como el escorpión grande en tamaño, coloración excéntrica y grotesco en su forma, este reptil alcanza una longitud de 60 a 90 cm. Las escamas del heloderma son muy parecidas a cuentas que cubren su cuerpo a excepción de la parte ventral. Su cabeza es aplanada y triangular, el hocico chato y grueso y los ojos pequeños.
+Los colores que predominan son el café oscuro y amarillo. Su cola es gorda cuando se alimenta bien pero disminuye en tamaño cuando deja de comer.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rP-2p-hWp">
+                                <rect key="frame" x="257" y="621" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="escoprion(reptil)" translatesAutoresizingMaskIntoConstraints="NO" id="IB7-UV-RmD">
+                                <rect key="frame" x="20" y="29" width="335" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="Orx-68-WH7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escorpion (Reptil)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0d-vW-Laj">
+                                <rect key="frame" x="119" y="212" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ahB-PW-w3F" firstAttribute="trailing" secondItem="BNc-Et-P9d" secondAttribute="trailing" constant="20" id="1JM-oP-Qns"/>
+                            <constraint firstItem="IB7-UV-RmD" firstAttribute="leading" secondItem="BNc-Et-P9d" secondAttribute="leading" id="BnA-Xg-due"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h0d-vW-Laj" secondAttribute="trailing" constant="20" symbolic="YES" id="E8r-w4-psv"/>
+                            <constraint firstItem="mag-HC-qIp" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="596" id="EWl-9g-raJ"/>
+                            <constraint firstItem="h0d-vW-Laj" firstAttribute="leading" secondItem="ahB-PW-w3F" secondAttribute="leading" constant="119" id="He3-xp-ZRt"/>
+                            <constraint firstItem="7rP-2p-hWp" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="601" id="JLZ-FW-qSf"/>
+                            <constraint firstItem="IB7-UV-RmD" firstAttribute="trailing" secondItem="BNc-Et-P9d" secondAttribute="trailing" id="KiN-6f-HXV"/>
+                            <constraint firstItem="mag-HC-qIp" firstAttribute="leading" secondItem="7rP-2p-hWp" secondAttribute="trailing" constant="14" id="Qxf-O5-Kn6"/>
+                            <constraint firstItem="ahB-PW-w3F" firstAttribute="trailing" secondItem="mag-HC-qIp" secondAttribute="trailing" constant="16" id="Szd-Q7-huT"/>
+                            <constraint firstItem="BNc-Et-P9d" firstAttribute="leading" secondItem="ahB-PW-w3F" secondAttribute="leading" constant="20" id="XEl-zW-R2Y"/>
+                            <constraint firstItem="7rP-2p-hWp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gsx-Zh-fQb" secondAttribute="leading" constant="20" symbolic="YES" id="XTI-FS-ngm"/>
+                            <constraint firstItem="BNc-Et-P9d" firstAttribute="top" secondItem="mag-HC-qIp" secondAttribute="bottom" constant="-403" id="etR-0S-kaH"/>
+                            <constraint firstItem="h0d-vW-Laj" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="192" id="phG-tK-EIA"/>
+                            <constraint firstItem="IB7-UV-RmD" firstAttribute="top" secondItem="ahB-PW-w3F" secondAttribute="top" constant="9" id="qUN-BM-sIk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ahB-PW-w3F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Eq-NO-XeE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxI-xM-psy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cascabel" width="800" height="480"/>
+        <image name="dragon-de-komodo-800x375" width="800" height="375"/>
+        <image name="escoprion(reptil)" width="600" height="400"/>
+        <image name="tortuga1" width="1890" height="1417"/>
+    </resources>
+</document>
